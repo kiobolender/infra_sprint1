@@ -1,5 +1,5 @@
 IP: 84.201.160.140 ;
-name_taski: https://ilyag.ddns.net/ ;
+name_taski: https://yandex.ru/ ;
 name_kittygram: https://kittygajlit.ddns.net/ ;
 login: Admin ;
 password: Admin ;

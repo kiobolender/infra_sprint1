@@ -2,7 +2,7 @@ http {
     server_tokens off;
     }
 server {
-    server_name ilyag.ddns.net;
+    server_name tasilg.ddns.net;
 
      location /api/ {
         proxy_pass http://127.0.0.1:8000;
@@ -19,20 +19,20 @@ server {
     }
 
 
-    listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/ilyag.ddns.net/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ilyag.ddns.net/privkey.pem;
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/tasilg.ddns.net/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/tasilg.ddns.net/privkey.pem;
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
 }
 server {
-    if ($host = ilyag.ddns.net) {
+    if ($host = tasilg.ddns.net) {
         return 301 https://$host$request_uri;
     }
 
      listen 80;
-    server_name ilyag.ddns.net;
+    server_name tasilg.ddns.net;
     return 404;
 
 

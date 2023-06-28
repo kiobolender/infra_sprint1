@@ -1,6 +1,6 @@
 [Unit]
 
-Description=kittigram-gunicorn daemon
+Description=kittigram-gunicorn daemon infra_sprint1
 After=network.target
 
 [Service]
